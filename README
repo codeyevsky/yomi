@@ -1,10 +1,3 @@
-Anladım, istediğiniz şekilde, sağladığınız README dosyasını, verdiğiniz talimatlara göre İngilizce'ye çevirip düzenledim. Bu yeni versiyon, projenin tüm detaylarını, hedeflerini, teknolojik yapısını, mimarisini ve gelecekteki yol haritasını açıkça belirtmektedir.
-
------
-
-### README.md
-
-````markdown
 # 🟣 Yomi — Pixel Art Image Converter
 **Yomi** is a **desktop application** built entirely with **Python** that converts any image into **pixel-art styled images** at multiple resolutions such as **32x32**, **64x64**, **128x128**, **256x256**, **512x512** and **more**.
 Yomi focuses on **simplicity, performance, and offline image processing**, offering a clean, intuitive interface for pixel art generation.
