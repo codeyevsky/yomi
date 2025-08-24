@@ -1,0 +1,174 @@
+Anladım, istediğiniz şekilde, sağladığınız README dosyasını, verdiğiniz talimatlara göre İngilizce'ye çevirip düzenledim. Bu yeni versiyon, projenin tüm detaylarını, hedeflerini, teknolojik yapısını, mimarisini ve gelecekteki yol haritasını açıkça belirtmektedir.
+
+-----
+
+### README.md
+
+````markdown
+# 🟣 Yomi — Pixel Art Image Converter
+**Yomi** is a **desktop application** built entirely with **Python** that converts any image into **pixel-art styled images** at multiple resolutions such as **32x32**, **64x64**, **128x128**, **256x256**, **512x512** and **more**.
+Yomi focuses on **simplicity, performance, and offline image processing**, offering a clean, intuitive interface for pixel art generation.
+
+---
+
+## 🎯 Project Goal
+The purpose of Yomi is to provide a **lightweight, cross-platform** desktop tool for **pixelating images** quickly and efficiently without requiring any online services.
+Whether you're a **game developer**, **designer**, or simply a **pixel art enthusiast**, Yomi helps you convert high-resolution images into pixel-perfect versions optimized for different use cases.
+
+---
+
+## 🖼 Key Features
+- **Multi-resolution Pixelation** — Automatically generate pixelated images in **32x32**, **64x64**, **128x128**, **256x256**, **512x512** and **more** formats.
+- **Offline & Fast** — Everything runs locally, ensuring high performance and privacy.
+- **Drag & Drop Interface** — Easily drop images into the app for instant processing.
+- **Cross-Platform Support** — Works on **Windows**, **macOS**, and **Linux**.
+- **Batch Conversion** — Process multiple images at once.
+- **Custom Output Options** — Choose your own pixel resolutions and export formats (PNG, JPEG, GIF).
+
+---
+
+## 💻 How to Run
+To run this project, follow these steps:
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/your-username/yomi.git](https://github.com/your-username/yomi.git)
+cd yomi
+````
+
+### 2\. Install Dependencies
+
+```bash
+pip install Pillow PyQt5 numpy
+```
+
+### 3\. Start the Application
+
+```bash
+python yomi_gui.py
+```
+
+-----
+
+## 🛠 Technology Stack
+
+Yomi is developed using the following technologies:
+
+**Programming Language:**
+
+  * [Python 3.10+](https://www.python.org/) — The core programming language powering the application.
+
+**Libraries & Usage:**
+
+  * **Pillow** — A powerful image processing library used for opening, resizing, and saving images in various formats.
+  * **PyQt5** — The cross-platform GUI framework used to build the modern, responsive, and intuitive user interface.
+  * **NumPy** — A fundamental package for scientific computing with Python, used to optimize array-based image manipulations for performance.
+  * **os** (Built-in) — Manages file and directory operations, such as creating the output folder.
+  * **sys** (Built-in) — Provides access to system-specific parameters and functions, used for managing application runtime.
+
+-----
+
+## 🧩 Architecture Overview
+
+Yomi is designed with **simplicity** and **modularity** in mind:
+
+```
++---------------------------+
+|      User Interface       |
+|  - Built with PyQt5       |
+|  - Drag & Drop enabled    |
+|  - User input for options |
++---------------------------+
+             |
+             v
++---------------------------+
+|    Pixelation Engine      |
+|  - Reads image (Pillow)   |
+|  - Processes data (NumPy) |
+|  - Applies filters        |
+|  - Resizes to resolutions |
++---------------------------+
+             |
+             v
++---------------------------+
+|    File Management        |
+|  - Creates dirs (os)      |
+|  - Saves outputs (Pillow) |
+|  - Manages previews       |
++---------------------------+
+             |
+             v
++---------------------------+
+|     System Control        |
+|  - Handles system exits   |
+|  - Manages resources (sys)|
++---------------------------+
+```
+
+-----
+
+## 🚀 How It Works
+
+1.  **Upload an Image**: Users can select or drag an image into Yomi's interface.
+2.  **Processing**: The application uses **Pillow** and **NumPy** to efficiently process the image, applying selected color filters and generating pixelated versions at different resolutions.
+3.  **Preview & Export**: The processed images are displayed in a scrollable results area. The application automatically saves the files to the designated output folder in the chosen format.
+
+-----
+
+## 🔮 Roadmap
+
+| Feature                     | Status           |
+| -------------------------- | --------------- |
+| Core image pixelation      | ✅ Completed      |
+| Multi-resolution export    | ✅ Completed      |
+| Drag & drop upload         | ✅ Completed      |
+| Batch processing           | ✅ Completed      |
+| Dark / light themes        | ✅ Completed      |
+| Custom export options      | ✅ Completed      |
+| AI-based pixel smoothing   | ❌ Removed        |
+
+-----
+
+## 📦 Distribution
+
+Yomi will be packaged as a **standalone executable** for easy installation:
+
+  * **Windows**: `.exe` via [PyInstaller](https://www.pyinstaller.org/)
+  * **macOS**: `.app` bundle
+  * **Linux**: `.AppImage` or `.deb` package
+
+-----
+
+## ⚡ Performance Goals
+
+  * Fast, efficient local image processing.
+  * Optimized memory usage when handling large images.
+  * Instant previews of multiple resolutions.
+  * Zero dependencies on online APIs.
+
+-----
+
+## 📢 Tagline
+
+> **"Yomi — Transform any image into pixel-perfect art, fast and offline."**
+
+-----
+
+## 📄 License
+
+This project is licensed under the **MIT License**. You are free to use, modify, and distribute the software.
+
+-----
+
+## 🤝 Contribution
+
+Contributions are welcome\! If you'd like to suggest new features or report bugs, please open an **issue** or submit a **pull request**.
+
+-----
+
+## 🧠 Author
+
+**Yomi** is developed and maintained by **[codeyevsky](https://github.com/codeyevsky)**.
+
+```
+```
